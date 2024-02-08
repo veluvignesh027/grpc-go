@@ -92,6 +92,7 @@ possible reasons, including:
     [MaxConnectionAgeGrace](https://pkg.go.dev/google.golang.org/grpc/keepalive?tab=doc#ServerParameters),
     to allow longer RPC calls to finish.
 
+
 It can be tricky to debug this because the error happens on the client side but
 the root cause of the connection being closed is on the server side. Turn on
 logging on __both client and server__, and see if there are any transport
